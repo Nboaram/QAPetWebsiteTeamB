@@ -4,7 +4,6 @@ const setId = (numb) => id=numb.value;
 
 
 function deleteUser() {
-    console.log(id);
 let userId = JSON.stringify(id);
 fetchData("DELETE", "/owners/" + id, userId)
 }
