@@ -1,4 +1,4 @@
-function getByPetType() {
+function getAllPets() {
 
     let text = document.getElementById("pet").value;
 
@@ -6,7 +6,7 @@ function getByPetType() {
 
     console.log(sessionStorage.getItem("pet").value)
 
-    fetchData("GET", "/pets/pettypes", null).then((req) => {
+    fetchData("GET", "/pets", null).then((req) => {
 
         console.log(req.responseText);
 
