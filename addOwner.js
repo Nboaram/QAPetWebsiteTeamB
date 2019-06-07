@@ -23,13 +23,13 @@ let user =  {
 
 
     function addUser(){
-        sub();
+        submit();
         let s = JSON.stringify(user);
        fetchData("POST","/owners",s).then((req)=>{ 
     console.log(req.responseText);
     })};
 
-function sub() {
+function submit() {
     user.firstName= document.getElementById("firstName").value;
     user.lastName= document.getElementById("lastName").value;
     user.address= document.getElementById("address").value;
